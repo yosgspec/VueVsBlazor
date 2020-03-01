@@ -1,0 +1,17 @@
+﻿@page "/OnChangeEvent"
+
+<div>
+	<h1>Check: @isChecked</h1>
+	<input id=chk type=checkbox v-model="isChecked" @change="chkChange">@(""
+	)<label for=chk>CheckBox</label>
+</div>
+
+@inject IJSRuntime js;
+@code{
+	bool isChecked=false;
+
+	async Task chkChange(){
+		await Task.Delay(1);
+		await js.InvokeVoidAsync("alert",$"Check: {isChecked}");
+	}
+}

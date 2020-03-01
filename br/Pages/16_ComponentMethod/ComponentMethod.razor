@@ -1,0 +1,14 @@
+﻿@page "/ComponentMethod"
+
+<div>
+	<Toast @ref="toast" />
+	<button @onclick="viewToast">Click Me!</button>
+</div>
+
+@code{
+	Toast toast;
+
+	async Task viewToast(){
+		await toast.show("View Toast!");
+	}
+}

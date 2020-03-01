@@ -1,0 +1,16 @@
+﻿@page "/LifeCycle"
+
+<div>
+	<h1>@title</h1>
+</div>
+
+@code{
+	string title="Hello Blazor!";
+
+	protected override async Task OnAfterRenderAsync(bool firstRender){
+		if(!firstRender) return;
+		await Task.Delay(5000);
+		title+=" 5s passed!";
+		StateHasChanged();
+	}
+}
