@@ -7,7 +7,6 @@
 
 <style scoped>
 	#bookList{
-		border: 5px solid #CCC;
 		height: 300px;
 		width: 300px;
 	}
@@ -19,7 +18,13 @@ import store from "@/store";
 
 @Component
 export default class BooksInput extends Vue{
-	bookList="";
+	bookList=`たのしいさんすう
+たのしいこくご
+たのしいどうとく
+かぐやひめ
+シンデレラ
+うらしまたろう
+かちかちやま`;
 
 	public setBooks(){
 		store.commit("setBooks",this.bookList.split(/\r|\n|\r\n/).filter(s=>s!=""));
