@@ -5,7 +5,6 @@
 
 <style>
 	#bookList{
-		border: 5px solid #CCC;
 		height: 300px;
 		width: 300px;
 	}
@@ -15,11 +14,17 @@
 @inject AppState state;
 
 @code{
-	string bookList="";
+	string bookList=$@"たのしいさんすう
+たのしいこくご
+たのしいどうとく
+かぐやひめ
+シンデレラ
+うらしまたろう
+かちかちやま";
 
 	public void setBooks(){
 		state.setBooks(Array.FindAll(bookList.Replace("\r\n","\n").Split(new[]{'\n','\r'}),s=>s!=""));
-		state.setDate(DateTime.Now);
+		state.setDate(DateTime.UtcNow+new TimeSpan(9,0,0));
 		js.InvokeVoidAsync("alert","setBooks!");
 	}
 }
