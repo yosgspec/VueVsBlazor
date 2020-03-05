@@ -1,6 +1,0 @@
-<template>
-<div>
-	<h3>ComponentA</h3>
-	<textarea></textarea>
-</div>
-</template>
