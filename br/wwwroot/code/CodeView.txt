@@ -1,0 +1,54 @@
+<div>
+	@foreach(var c in codes){
+		<div id=codeView>
+			<h3>@c.name</h3>
+			<pre><code>@c.code</code></pre>
+		</div>
+	}
+</div>
+
+<style>
+#codeView{
+	border: 1px double #000;
+	margin: 10px 0;
+	padding: 5px;
+}
+#codeView code{
+	color: #0000FF;
+	font-family: "M+ 1mn";
+	font-size: 0.9em;
+	font-size: 1.1em;
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+</style>
+
+@inject NavigationManager nav;
+@inject HttpClient http;
+@inject AppState state;
+
+@code{
+	Dictionary<string,List<string>> pageList;
+	Code[] codes={};
+	class Code{
+		public string name;
+		public string code;
+	}
+
+	async Task moveURL(){
+		var key=nav.ToBaseRelativePath(nav.Uri);
+		codes=await Task.WhenAll(pageList[key].ConvertAll(async v=>new Code{
+			name=v=="$store"? "AppStore.cs": v+".razor",
+			code=await http.GetStringAsync($"./code/{v}.txt?0")
+		}));
+		StateHasChanged();
+	}
+	async void moveURL(object sender,LocationChangedEventArgs e){await moveURL();}
+
+	protected override async Task OnAfterRenderAsync(bool firstRender){
+		if(!firstRender) return;
+		pageList=await http.GetJsonAsync<Dictionary<string,List<string>>>("./Assets/pageList.json?0");
+		await moveURL();
+		nav.LocationChanged+=moveURL;
+	}
+}

@@ -1,0 +1,26 @@
+﻿@page "/StateContainer"
+
+<div>
+	<BooksInput />
+	<button @onclick="getBooks">Get Books!</button>
+	<h3>BookLists (@date)</h3>
+	<ul>
+		@foreach(var book in books){<li @key="book">@book</li>}
+	</ul>
+</div>
+
+@inject AppState state;
+@implements IDisposable;
+
+@code{
+	protected override void OnInitialized(){state.OnChange+=StateHasChanged;}
+	public void Dispose(){state.OnChange-=StateHasChanged;}
+
+	string[] books={};
+	DateTime? date=null;
+
+	void getBooks(){
+		books=state.books;
+		date=state.date;
+	}
+}

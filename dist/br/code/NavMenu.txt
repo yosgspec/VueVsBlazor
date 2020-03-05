@@ -1,0 +1,41 @@
+﻿<nav>
+	<b style="color:#909;font-size:1.5em;">Blazor Sample</b>
+	<ol type="1" start="0">
+		<li><NavLink Match="NavLinkMatch.All" href="./">HelloWorld</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./StyleBlock">StyleBlock</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ScriptBlock">ScriptBlock</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./Formula">Formula</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./LifeCycle">LifeCycle</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./UseDOMAPI">UseDOMAPI</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./BindingInput">BindingInput</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./BindingInputOneWay">BindingInputOneWay</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./EventHandler">EventHandler</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./OnChangeEvent">OnChangeEvent</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./BindingStyle">BindingStyle</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./BindingClass">BindingClass</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./IfAndShow">IfAndShow</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ForEachLoop">ForEachLoop</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./AddComponent">AddComponent</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ComponentAttribute">ComponentAttribute</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ComponentMethod">ComponentMethod</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./StateContainer">StateContainer</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ReadJSON">ReadJSON</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./ReadText">ReadText</NavLink></li>
+	</ol>
+	<b><a href=@ve>Go Vue.js!</a></b>
+</nav>
+
+<style>
+nav .active{
+	color: #FF0000;
+	font-weight: bold;
+}
+</style>
+
+@inject NavigationManager nav;
+
+@code{
+	string ve{get{
+		return nav.Uri.Replace("/br/","/ve/");
+	}}
+}

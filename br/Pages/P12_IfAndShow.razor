@@ -1,0 +1,19 @@
+﻿@page "/IfAndShow"
+
+<div>
+	<h1>Check: @isChecked</h1>
+	<input id=chk type=checkbox @bind="isChecked">@(""
+	)<label for=chk>CheckBox</label>
+	@if(isChecked){
+		<div>
+			<input>
+		</div>
+	}
+	<div style=@("display:"+(isChecked? "": "none"))>
+		<input>
+	</div>
+</div>
+
+@code{
+	bool isChecked=false;
+}

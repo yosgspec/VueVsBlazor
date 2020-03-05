@@ -1,0 +1,18 @@
+﻿@page "/ReadText"
+
+<div>
+	<h3>Read Text</h3>
+	<pre>@text</pre>
+</div>
+
+@inject HttpClient http;
+
+@code{
+	string text="";
+
+	protected override async Task OnAfterRenderAsync(bool firstRender){
+		if(!firstRender) return;
+		text=await http.GetStringAsync("./kimigayo.txt?0");
+		StateHasChanged();
+	}
+}
