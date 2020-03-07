@@ -1,6 +1,6 @@
 <template>
-<div>
-	<div v-for="c in codes" id=codeView>
+<div id=codeView>
+	<div v-for="c in codes">
 		<h3>{{c.name}}</h3>
 		<pre><code>{{c.code}}</code></pre>
 	</div>
@@ -8,7 +8,7 @@
 </template>
 
 <style scoped>
-#codeView{
+#codeView div{
 	border: 1px double #000;
 	margin: 10px 0;
 	padding: 5px;
@@ -16,10 +16,10 @@
 #codeView code{
 	color: #0000FF;
 	font-family: "M+ 1mn";
-	font-size: 0.9em;
 	line-height: 1em;
 	tab-size: 4;
 	-moz-tab-size: 4;
+	cursor: text;
 }
 </style>
 

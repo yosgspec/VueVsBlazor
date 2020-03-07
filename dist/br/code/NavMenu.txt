@@ -22,7 +22,8 @@
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadJSON">ReadJSON</NavLink></li>
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadText">ReadText</NavLink></li>
 	</ol>
-	<b><a href=@ve>Go Vue.js!</a></b>
+	<b><a href=@ve>Go Vue.js!</a></b><br>
+	<b><a href=@ng>Go Angular!</a></b>
 </nav>
 
 <style>
@@ -35,7 +36,6 @@ nav .active{
 @inject NavigationManager nav;
 
 @code{
-	string ve{get{
-		return nav.Uri.Replace("/br/","/ve/");
-	}}
+	string ve{get{return nav.Uri.Replace("/br/","/ve/");}}
+	string ng{get{return nav.Uri.Replace("/br/","/ng/");}}
 }

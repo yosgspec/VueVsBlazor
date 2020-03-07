@@ -9,7 +9,7 @@ import {Component,Vue} from "vue-property-decorator";
 
 @Component
 export default class UseDOMAPI extends Vue{
-	async mounted(){
+	mounted(){
 		var title=document.title;
 		alert(title);
 	}
