@@ -14,7 +14,7 @@ export default class ReadText extends Vue{
 	text="";
 
 	async mounted(){
-		this.text=await axios.get("./kimigayo.txt?0").then(v=>v.data);
+		this.text=await axios.get("./assets/kimigayo.txt?0").then(v=>v.data);
 	}
 }
 </script>

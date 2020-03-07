@@ -56,11 +56,11 @@
 	],
 	"StateContainer":[
 		"P17_StateContainer",
+		"BooksInput",
 		"$store"
 	],
 	"ReadJSON":[
-		"P18_ReadJSON",
-		"BooksInput"
+		"P18_ReadJSON"
 	],
 	"ReadText":[
 		"P19_ReadText"

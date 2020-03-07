@@ -12,7 +12,7 @@
 
 	protected override async Task OnAfterRenderAsync(bool firstRender){
 		if(!firstRender) return;
-		text=await http.GetStringAsync("./kimigayo.txt?0");
+		text=await http.GetStringAsync("./Assets/kimigayo.txt?0");
 		StateHasChanged();
 	}
 }

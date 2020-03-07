@@ -23,7 +23,8 @@
 		<li><router-link to="/ReadJSON">ReadJSON</router-link></li>
 		<li><router-link to="/ReadText">ReadText</router-link></li>
 	</ol>
-	<b><a :href="br">Go Blazor!</a></b>
+	<b><a :href="br">Go Blazor!</a></b><br>
+	<b><a :href="ng">Go Angular!</a></b>
 </nav>
 </template>
 
@@ -39,8 +40,7 @@ import {Component,Watch,Vue} from "vue-property-decorator";
 
 @Component
 export default class NavMenu extends Vue{
-	get br(){
-		return location.href.replace("/ve/","/br/");
-	}
+	get br(){return location.href.replace("/ve/","/br/");}
+	get ng(){return location.href.replace("/ve/","/ng/");}
 }
 </script>
