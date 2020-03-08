@@ -17,6 +17,6 @@ export class P16ComponentMethodComponent{
 	private toast:ToastComponent;
 
 	async viewToast(){
-		this.toast.show("View Torst!");
+		await this.toast.show("View Torst!");
 	}
 }

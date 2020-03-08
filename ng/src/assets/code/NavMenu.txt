@@ -23,8 +23,13 @@ const template=`
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadJSON">ReadJSON</a></li>
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadText">ReadText</a></li>
 	</ol>
-	<b><a :href="ve">Go Vue.JS!</a></b><br>
-	<b><a :href="br">Go Blazor!</a></b>
+	<div style="display:flex;flex-direction:column;">
+		<b><a [href]="ve">Go Vue.js!</a></b>
+		<b><a [href]="br">Go Blazor!</a></b>
+		<b><a href="https://qiita.com/yosgspec/items/3cf93e70a81805d70d29">Qiita</a></b>
+		<b><a href="https://github.com/yosgspec/VueVsBlazor">GitHug</a></b>
+		<b><a href="/">Top Page</a></b>
+	</div>
 </nav>
 
 <style>

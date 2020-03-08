@@ -19,6 +19,6 @@ export class P19ReadTextComponent implements OnInit {
 	text="";
 
 	async ngOnInit(){
-		this.text=await new Promise(res=>this.http.get("./assets/kimigayo.txt",{responseType:"text"}).subscribe(res));
+		this.text=await new Promise(res=>this.http.get("./assets/kimigayo.txt?0",{responseType:"text"}).subscribe(res));
 	}
 }

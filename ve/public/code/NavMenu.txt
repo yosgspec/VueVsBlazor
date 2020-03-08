@@ -23,8 +23,13 @@
 		<li><router-link to="/ReadJSON">ReadJSON</router-link></li>
 		<li><router-link to="/ReadText">ReadText</router-link></li>
 	</ol>
-	<b><a :href="br">Go Blazor!</a></b><br>
-	<b><a :href="ng">Go Angular!</a></b>
+	<div style="display:flex;flex-direction:column;">
+		<b><a :href="br">Go Blazor!</a></b>
+		<b><a :href="ng">Go Angular!</a></b>
+		<b><a href="https://qiita.com/yosgspec/items/3cf93e70a81805d70d29">Qiita</a></b>
+		<b><a href="https://github.com/yosgspec/VueVsBlazor">GitHug</a></b>
+		<b><a href="/">Top Page</a></b>
+	</div>
 </nav>
 </template>
 

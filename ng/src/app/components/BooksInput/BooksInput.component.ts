@@ -35,4 +35,5 @@ export class BooksInputComponent{
 		this.store.books=this.bookList.split(/\r|\n|\r\n/).filter(s=>s!="");
 		this.store.date=new Date();
 		alert("setBooks!");
-	}}
+	}
+}

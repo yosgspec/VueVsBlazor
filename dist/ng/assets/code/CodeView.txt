@@ -1,6 +1,6 @@
 const template=`
 <div id=codeView>
-	<div *ngFor="let c in codes">
+	<div *ngFor="let c of codes">
 		<h3>{{c.name}}</h3>
 		<pre><code>{{c.code}}</code></pre>
 	</div>
@@ -24,6 +24,7 @@ const template=`
 `;
 
 import {Component,OnInit} from "@angular/core";
+import {HttpClient} from "@angular/common/http";
 import {Router,NavigationEnd} from "@angular/router";
 
 interface Code{
@@ -33,16 +34,16 @@ interface Code{
 
 @Component({
 	selector: "CodeView",
-	template: ""
+	template: template
 })
-export class CodeViewComponent implements OnInit{
-	ngOnInit(){}
-	/*constructor(
+export class CodeViewComponent{
+	constructor(
+		private http:HttpClient,
 		private router:Router
 	){
 		this.router.events.subscribe(event=>{
-    		if(event instanceof NavigationEnd) moveURL();
-    	});
+	    	if(this.pageList && event instanceof NavigationEnd) this.moveURL();
+	    });
 	}
 	pageList!:{[s:string]:string[]};
 	codes:Code[]=[];
@@ -50,13 +51,13 @@ export class CodeViewComponent implements OnInit{
 	async moveURL(){
 		var key=location.pathname.split("/").pop();
 		this.codes=await Promise.all(this.pageList[key].map(async v=>({
-			name: v=="$store"? "store/index.ts": v+".vue",
-			code: (await axios.get(`./code/${v}.txt?0`)).data
+			name: v=="$store"? "store.service.ts": v+".component.ts",
+			code: await new Promise(res=>this.http.get(`./assets/code/${v}.txt?0`,{responseType:"text"}).subscribe(res)) as string
 		})));
 	}
 
 	async ngOnInit(){
-		this.pageList=require("@/assets/pageList.json");
+		this.pageList=await new Promise(res=>this.http.get("./assets/pageList.json?0").subscribe(res));
 		await this.moveURL();
-	}*/
+	}
 }

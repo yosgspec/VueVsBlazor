@@ -2,7 +2,7 @@
 
 <div>
 	<h1>Check: @isChecked</h1>
-	<input id=chk type=checkbox @bind="isChecked" @onclick="chkChange">@(""
+	<input id=chk type=checkbox @bind="chkChange">@(""
 	)<label for=chk>CheckBox</label>
 </div>
 
@@ -11,8 +11,11 @@
 @code{
 	bool isChecked=false;
 
-	async Task chkChange(){
-		await Task.Delay(1);
-		await js.InvokeVoidAsync("alert",$"Check: {isChecked}");
+	bool chkChange{
+		get{return isChecked;}
+		set{
+			isChecked=value;
+			_=js.InvokeVoidAsync("alert",$"Check: {isChecked}");
+		}
 	}
 }

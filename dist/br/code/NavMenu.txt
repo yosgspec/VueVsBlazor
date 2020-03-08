@@ -22,8 +22,13 @@
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadJSON">ReadJSON</NavLink></li>
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadText">ReadText</NavLink></li>
 	</ol>
-	<b><a href=@ve>Go Vue.js!</a></b><br>
-	<b><a href=@ng>Go Angular!</a></b>
+	<div style="display:flex;flex-direction:column;">
+		<b><a href=@ve>Go Vue.js!</a></b>
+		<b><a href=@ng>Go Angular!</a></b>
+		<b><a href="https://qiita.com/yosgspec/items/3cf93e70a81805d70d29">Qiita</a></b>
+		<b><a href="https://github.com/yosgspec/VueVsBlazor">GitHug</a></b>
+		<b><a href="/">Top Page</a></b>
+	</div>
 </nav>
 
 <style>
