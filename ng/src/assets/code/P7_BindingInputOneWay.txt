@@ -11,7 +11,7 @@ import {Component,OnInit} from "@angular/core";
 	selector: "BindingInputOneWay",
 	template: template
 })
-export class P7BindingInputOneWayComponent implements OnInit{
+export class BindingInputOneWayComponent implements OnInit{
 	title="Hello Angular!";
 
 	async ngOnInit() {

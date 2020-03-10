@@ -2,14 +2,17 @@
 <div id=codeView>
 	<div v-for="c in codes">
 		<h3>{{c.name}}</h3>
-		<pre><code>{{c.code}}</code></pre>
+		<pre><code :class="{
+			'language-html': fileType(c.name)=='vue',
+			'language-ts': fileType(c.name)=='ts'
+		}">{{c.code}}</code></pre>
 	</div>
 </div>
 </template>
 
 <style scoped>
 #codeView div{
-	border: 1px double #000;
+	border: 1px double #999;
 	margin: 10px 0;
 	padding: 5px;
 }
@@ -20,6 +23,7 @@
 	tab-size: 4;
 	-moz-tab-size: 4;
 	cursor: text;
+	overflow-y: hidden;
 }
 </style>
 
@@ -37,9 +41,14 @@ export default class CodeView extends Vue{
 	pageList!:{[s:string]:string[]};
 	codes:Code[]=[];
 
+	fileType(file:string):string{
+		return file.split(/\./).pop();
+	}
+
 	@Watch("$route")
 	async moveURL(){
-		var key=location.pathname.split("/").pop();
+		var key=location.pathname.split(/\//).pop();
+		this.codes=[];
 		this.codes=await Promise.all(this.pageList[key].map(async v=>({
 			name: v=="$store"? "store/index.ts": v+".vue",
 			code: (await axios.get(`./code/${v}.txt?0`)).data
@@ -49,6 +58,11 @@ export default class CodeView extends Vue{
 	async mounted(){
 		this.pageList=require("@/assets/pageList.json");
 		await this.moveURL();
+	}
+
+	updated(){
+		//@ts-ignore
+		Prism.highlightAll();
 	}
 }
 </script>

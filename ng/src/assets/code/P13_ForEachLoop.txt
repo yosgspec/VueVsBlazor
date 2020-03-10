@@ -13,7 +13,7 @@ import {Component} from "@angular/core";
 	selector: "ForEachLoop",
 	template: template
 })
-export class P13ForEachLoopComponent{
+export class ForEachLoopComponent{
 	dict:{[s:string]:boolean}={
 		A:true,
 		B:true,

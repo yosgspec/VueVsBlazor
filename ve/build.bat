@@ -1,3 +1,3 @@
-@node ./build.js
+@cmd/c "node ./build.js"
 @pauge
 

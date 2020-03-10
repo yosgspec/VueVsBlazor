@@ -6,13 +6,13 @@ const template=`
 `;
 
 import {Component,ViewChild} from "@angular/core";
-import {ToastComponent} from "../../components/Toast/Toast.component";
+import {ToastComponent} from "../components/Toast.component";
 
 @Component({
 	selector: "ComponentMethod",
 	template: template
 })
-export class P16ComponentMethodComponent{
+export class ComponentMethodComponent{
 	@ViewChild(ToastComponent,{static: false})
 	private toast:ToastComponent;
 

@@ -15,6 +15,6 @@ import {Component} from "@angular/core";
 	selector: "BindingStyle",
 	template: template
 })
-export class P10BindingStyleComponent{
+export class BindingStyleComponent{
 	isChecked=false;
 }

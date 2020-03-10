@@ -10,7 +10,7 @@ import {Component} from "@angular/core";
 	selector: "EventHandler",
 	template: template
 })
-export class P8EventHandlerComponent{
+export class EventHandlerComponent{
 	title="Hello Angular!";
 
 	openDialog(){

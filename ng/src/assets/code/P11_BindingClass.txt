@@ -29,6 +29,6 @@ import {Component} from "@angular/core";
 	selector: "BindingClass",
 	template: template
 })
-export class P11BindingClassComponent{
+export class BindingClassComponent{
 	isChecked=false;
 }

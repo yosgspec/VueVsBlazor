@@ -10,7 +10,7 @@ import {Component,OnInit} from "@angular/core";
 	selector: "LifeCycle",
 	template: template
 })
-export class P4LifeCycleComponent implements OnInit{
+export class LifeCycleComponent implements OnInit{
 	title="Hello Angular!";
 
 	async ngOnInit(){

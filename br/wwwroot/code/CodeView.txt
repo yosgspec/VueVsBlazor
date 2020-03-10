@@ -1,13 +1,16 @@
 <div id=codeView>
 	@foreach(var c in codes){<div>
 		<h3>@c.name</h3>
-		<pre><code>@c.code</code></pre>
+		<pre><code class=@(
+			(fileType(c.name)=="razor"? "language-aspnet": "")+
+			(fileType(c.name)=="cs"? "language-cs": "")
+		)>@c.code</code></pre>
 	</div>}
 </div>
 
 <style>
 #codeView div{
-	border: 1px double #000;
+	border: 1px double #999;
 	margin: 10px 0;
 	padding: 5px;
 }
@@ -18,9 +21,11 @@
 	tab-size: 4;
 	-moz-tab-size: 4;
 	cursor: text;
+	overflow-y: hidden;
 }
 </style>
 
+@inject IJSRuntime js;
 @inject NavigationManager nav;
 @inject HttpClient http;
 @inject AppState state;
@@ -33,8 +38,14 @@
 		public string code;
 	}
 
+	string fileType(string file){
+		return (new LinkedList<string>(file.Split('.'))).Last.Value;
+	}
+
 	async Task moveURL(){
 		var key=nav.ToBaseRelativePath(nav.Uri);
+		codes=new Code[]{};
+		StateHasChanged();
 		codes=await Task.WhenAll(pageList[key].ConvertAll(async v=>new Code{
 			name=v=="$store"? "AppStore.cs": v+".razor",
 			code=await http.GetStringAsync($"./code/{v}.txt?0")
@@ -44,9 +55,11 @@
 	async void moveURL(object sender,LocationChangedEventArgs e){await moveURL();}
 
 	protected override async Task OnAfterRenderAsync(bool firstRender){
-		if(!firstRender) return;
-		pageList=await http.GetJsonAsync<Dictionary<string,List<string>>>("./Assets/pageList.json?0");
-		await moveURL();
-		nav.LocationChanged+=moveURL;
+		if(firstRender){
+			pageList=await http.GetJsonAsync<Dictionary<string,List<string>>>("./Assets/pageList.json?0");
+			await moveURL();
+			nav.LocationChanged+=moveURL;
+		}
+		await js.InvokeVoidAsync("Prism.highlightAll");
 	}
 }

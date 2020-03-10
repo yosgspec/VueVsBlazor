@@ -12,7 +12,7 @@ import {Component} from "@angular/core";
 	selector: "OnChangeEvent",
 	template: template
 })
-export class P9OnChangeEventComponent{
+export class OnChangeEventComponent{
 	isChecked=false;
 
 	get chkChange(){return this.isChecked;}

@@ -8,9 +8,9 @@ const exec=require("util").promisify(child_process.exec);
 	await Promise.all((await fs.readdir(codeDir)).map(f=>
 		fs.unlink(`${codeDir}/${f}`)));
 	await Promise.all((await fs.readdir("./src/app/pages")).map(f=>
-		fs.copyFile(`./src/app/pages/${f}/${f}.component.ts`,`${codeDir}/${f}.txt`)));
+		fs.copyFile(`./src/app/pages/${f}`,`${codeDir}/${f}`.replace(/\.component\.ts/g,".txt"))));
 	await Promise.all((await fs.readdir("./src/app/components")).map(f=>
-		fs.copyFile(`./src/app/components/${f}/${f}.component.ts`,`${codeDir}/${f}.txt`)));
+		fs.copyFile(`./src/app/components/${f}`,`${codeDir}/${f}`.replace(/\.component\.ts/g,".txt"))));
 	await fs.copyFile("./src/app/store.service.ts",`${codeDir}/$store.txt`);
 	console.log("Code Copied.");
 

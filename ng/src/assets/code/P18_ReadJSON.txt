@@ -13,7 +13,7 @@ import {HttpClient} from "@angular/common/http";
 	selector: "ReadJSON",
 	template: template
 })
-export class P18ReadJSONComponent implements OnInit{
+export class ReadJSONComponent implements OnInit{
 	constructor(
 		private http:HttpClient
 	){}

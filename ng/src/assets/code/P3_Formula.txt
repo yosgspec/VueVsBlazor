@@ -10,4 +10,4 @@ import {Component} from "@angular/core";
 	selector: "Formula",
 	template: template
 })
-export class P3FormulaComponent{}
+export class FormulaComponent{}

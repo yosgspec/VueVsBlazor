@@ -10,4 +10,4 @@ import {Component} from "@angular/core";
 	selector: "ComponentAttribute",
 	template: template
 })
-export class P15ComponentAttributeComponent{}
+export class ComponentAttributeComponent{}

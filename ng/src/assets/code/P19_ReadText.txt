@@ -12,7 +12,7 @@ import {HttpClient} from "@angular/common/http";
 	selector: "ReadText",
 	template: template
 })
-export class P19ReadTextComponent implements OnInit {
+export class ReadTextComponent implements OnInit {
 	constructor(
 		private http:HttpClient
 	){}

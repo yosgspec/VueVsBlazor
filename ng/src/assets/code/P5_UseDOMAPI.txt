@@ -10,7 +10,7 @@ import {Component,OnInit} from "@angular/core";
 	selector: "UseDOMAPI",
 	template: template
 })
-export class P5UseDOMAPIComponent implements OnInit{
+export class UseDOMAPIComponent implements OnInit{
 	ngOnInit(){
 		var title=document.title;
 		alert(title);

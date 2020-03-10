@@ -11,6 +11,6 @@ import {Component} from "@angular/core";
 	selector: "BindingInput",
 	template: template
 })
-export class P6BindingInputComponent{
+export class BindingInputComponent{
 	title="Hello Angular!";
 }
