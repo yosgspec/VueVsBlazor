@@ -30,5 +30,5 @@ const exec=require("util").promisify(child_process.exec);
 	try{await fs.rename("./dist","../dist/ve");}catch{}
 
 	console.log("Vue.js Build Done.");
-	process.stdin.once(process.exit);
+	process.stdin.once("data",process.exit());
 })();
