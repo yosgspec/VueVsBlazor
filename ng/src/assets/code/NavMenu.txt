@@ -22,6 +22,7 @@ const template=`
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/StateContainer">StateContainer</a></li>
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadJSON">ReadJSON</a></li>
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadText">ReadText</a></li>
+		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/InnerHTML">InnerHTML</a></li>
 	</ol>
 	<div style="display:flex;flex-direction:column;">
 		<b><a [href]="ve">Go Vue.js!</a></b>

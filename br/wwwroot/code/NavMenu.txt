@@ -21,6 +21,7 @@
 		<li><NavLink Match="NavLinkMatch.All" href="./StateContainer">StateContainer</NavLink></li>
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadJSON">ReadJSON</NavLink></li>
 		<li><NavLink Match="NavLinkMatch.All" href="./ReadText">ReadText</NavLink></li>
+		<li><NavLink Match="NavLinkMatch.All" href="./InnerHTML">InnerHTML</NavLink></li>
 	</ol>
 	<div style="display:flex;flex-direction:column;">
 		<b><a href=@ve>Go Vue.js!</a></b>

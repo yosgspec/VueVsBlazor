@@ -755,6 +755,12 @@
     var _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ./pages/P19_ReadText.component */
     "./src/app/pages/P19_ReadText.component.ts");
+    /* harmony import */
+
+
+    var _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    /*! ./pages/P20_InnerHTML.component */
+    "./src/app/pages/P20_InnerHTML.component.ts");
 
     const routes = [{
       path: "",
@@ -816,6 +822,9 @@
     }, {
       path: "ReadText",
       component: _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_22__["ReadTextComponent"]
+    }, {
+      path: "InnerHTML",
+      component: _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_23__["InnerHTMLComponent"]
     }];
     let AppRoutingModule = class AppRoutingModule {};
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
@@ -1050,49 +1059,55 @@
     /* harmony import */
 
 
-    var _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    var _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
+    /*! ./pages/P20_InnerHTML.component */
+    "./src/app/pages/P20_InnerHTML.component.ts");
+    /* harmony import */
+
+
+    var _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! ./components/NavMenu.component */
     "./src/app/components/NavMenu.component.ts");
     /* harmony import */
 
 
-    var _components_CodeView_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _components_CodeView_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! ./components/CodeView.component */
     "./src/app/components/CodeView.component.ts");
     /* harmony import */
 
 
-    var _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! ./components/ComponentA.component */
     "./src/app/components/ComponentA.component.ts");
     /* harmony import */
 
 
-    var _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! ./components/ComponentB.component */
     "./src/app/components/ComponentB.component.ts");
     /* harmony import */
 
 
-    var _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! ./components/ComponentC.component */
     "./src/app/components/ComponentC.component.ts");
     /* harmony import */
 
 
-    var _components_Toast_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _components_Toast_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
     /*! ./components/Toast.component */
     "./src/app/components/Toast.component.ts");
     /* harmony import */
 
 
-    var _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! ./components/BooksInput.component */
     "./src/app/components/BooksInput.component.ts");
 
     let AppModule = class AppModule {};
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _pages_Index_component__WEBPACK_IMPORTED_MODULE_7__["IndexComponent"], _pages_P1_StyleBlock_component__WEBPACK_IMPORTED_MODULE_8__["StyleBlockComponent"], _pages_P2_ScriptBlock_component__WEBPACK_IMPORTED_MODULE_9__["ScriptBlockComponent"], _pages_P3_Formula_component__WEBPACK_IMPORTED_MODULE_10__["FormulaComponent"], _pages_P4_LifeCycle_component__WEBPACK_IMPORTED_MODULE_11__["LifeCycleComponent"], _pages_P5_UseDOMAPI_component__WEBPACK_IMPORTED_MODULE_12__["UseDOMAPIComponent"], _pages_P6_BindingInput_component__WEBPACK_IMPORTED_MODULE_13__["BindingInputComponent"], _pages_P7_BindingInputOneWay_component__WEBPACK_IMPORTED_MODULE_14__["BindingInputOneWayComponent"], _pages_P8_EventHandler_component__WEBPACK_IMPORTED_MODULE_15__["EventHandlerComponent"], _pages_P9_OnChangeEvent_component__WEBPACK_IMPORTED_MODULE_16__["OnChangeEventComponent"], _pages_P10_BindingStyle_component__WEBPACK_IMPORTED_MODULE_17__["BindingStyleComponent"], _pages_P11_BindingClass_component__WEBPACK_IMPORTED_MODULE_18__["BindingClassComponent"], _pages_P12_IfAndShow_component__WEBPACK_IMPORTED_MODULE_19__["IfAndShowComponent"], _pages_P13_ForEachLoop_component__WEBPACK_IMPORTED_MODULE_20__["ForEachLoopComponent"], _pages_P14_AddComponent_component__WEBPACK_IMPORTED_MODULE_21__["AddComponentComponent"], _pages_P15_ComponentAttribute_component__WEBPACK_IMPORTED_MODULE_22__["ComponentAttributeComponent"], _pages_P16_ComponentMethod_component__WEBPACK_IMPORTED_MODULE_23__["ComponentMethodComponent"], _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_24__["StateContainerComponent"], _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_25__["ReadJSONComponent"], _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_26__["ReadTextComponent"], _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_27__["NavMenuComponent"], _components_CodeView_component__WEBPACK_IMPORTED_MODULE_28__["CodeViewComponent"], _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_29__["ComponentAComponent"], _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_30__["ComponentBComponent"], _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_31__["ComponentCComponent"], _components_Toast_component__WEBPACK_IMPORTED_MODULE_32__["ToastComponent"], _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_33__["BooksInputComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _pages_Index_component__WEBPACK_IMPORTED_MODULE_7__["IndexComponent"], _pages_P1_StyleBlock_component__WEBPACK_IMPORTED_MODULE_8__["StyleBlockComponent"], _pages_P2_ScriptBlock_component__WEBPACK_IMPORTED_MODULE_9__["ScriptBlockComponent"], _pages_P3_Formula_component__WEBPACK_IMPORTED_MODULE_10__["FormulaComponent"], _pages_P4_LifeCycle_component__WEBPACK_IMPORTED_MODULE_11__["LifeCycleComponent"], _pages_P5_UseDOMAPI_component__WEBPACK_IMPORTED_MODULE_12__["UseDOMAPIComponent"], _pages_P6_BindingInput_component__WEBPACK_IMPORTED_MODULE_13__["BindingInputComponent"], _pages_P7_BindingInputOneWay_component__WEBPACK_IMPORTED_MODULE_14__["BindingInputOneWayComponent"], _pages_P8_EventHandler_component__WEBPACK_IMPORTED_MODULE_15__["EventHandlerComponent"], _pages_P9_OnChangeEvent_component__WEBPACK_IMPORTED_MODULE_16__["OnChangeEventComponent"], _pages_P10_BindingStyle_component__WEBPACK_IMPORTED_MODULE_17__["BindingStyleComponent"], _pages_P11_BindingClass_component__WEBPACK_IMPORTED_MODULE_18__["BindingClassComponent"], _pages_P12_IfAndShow_component__WEBPACK_IMPORTED_MODULE_19__["IfAndShowComponent"], _pages_P13_ForEachLoop_component__WEBPACK_IMPORTED_MODULE_20__["ForEachLoopComponent"], _pages_P14_AddComponent_component__WEBPACK_IMPORTED_MODULE_21__["AddComponentComponent"], _pages_P15_ComponentAttribute_component__WEBPACK_IMPORTED_MODULE_22__["ComponentAttributeComponent"], _pages_P16_ComponentMethod_component__WEBPACK_IMPORTED_MODULE_23__["ComponentMethodComponent"], _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_24__["StateContainerComponent"], _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_25__["ReadJSONComponent"], _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_26__["ReadTextComponent"], _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_27__["InnerHTMLComponent"], _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_28__["NavMenuComponent"], _components_CodeView_component__WEBPACK_IMPORTED_MODULE_29__["CodeViewComponent"], _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_30__["ComponentAComponent"], _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_31__["ComponentBComponent"], _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_32__["ComponentCComponent"], _components_Toast_component__WEBPACK_IMPORTED_MODULE_33__["ToastComponent"], _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_34__["BooksInputComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
@@ -1418,7 +1433,7 @@
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
 
-    const template = "\n<nav>\n\t<b style=\"color:#900;font-size:1.5em;\">Angular Sample</b>\n\t<ol type=\"1\" start=\"0\">\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/\">HelloWorld</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/StyleBlock\">StyleBlock</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ScriptBlock\">ScriptBlock</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/Formula\">Formula</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/LifeCycle\">LifeCycle</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/UseDOMAPI\">UseDOMAPI</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingInput\">BindingInput</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingInputOneWay\">BindingInputOneWay</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/EventHandler\">EventHandler</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/OnChangeEvent\">OnChangeEvent</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingStyle\">BindingStyle</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingClass\">BindingClass</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/IfAndShow\">IfAndShow</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ForEachLoop\">ForEachLoop</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/AddComponent\">AddComponent</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ComponentAttribute\">ComponentAttribute</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ComponentMethod\">ComponentMethod</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/StateContainer\">StateContainer</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ReadJSON\">ReadJSON</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ReadText\">ReadText</a></li>\n\t</ol>\n\t<div style=\"display:flex;flex-direction:column;\">\n\t\t<b><a [href]=\"ve\">Go Vue.js!</a></b>\n\t\t<b><a [href]=\"br\">Go Blazor!</a></b>\n\t\t<b><a href=\"https://qiita.com/yosgspec/items/3cf93e70a81805d70d29\">Qiita</a></b>\n\t\t<b><a href=\"https://github.com/yosgspec/VueVsBlazor\">GitHug</a></b>\n\t\t<b><a href=\"/\">Top Page</a></b>\n\t</div>\n</nav>\n\n<style>\n.active{\n\tcolor: #FF0000;\n\tfont-weight: bold;\n}\n</style>\n";
+    const template = "\n<nav>\n\t<b style=\"color:#900;font-size:1.5em;\">Angular Sample</b>\n\t<ol type=\"1\" start=\"0\">\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/\">HelloWorld</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/StyleBlock\">StyleBlock</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ScriptBlock\">ScriptBlock</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/Formula\">Formula</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/LifeCycle\">LifeCycle</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/UseDOMAPI\">UseDOMAPI</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingInput\">BindingInput</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingInputOneWay\">BindingInputOneWay</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/EventHandler\">EventHandler</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/OnChangeEvent\">OnChangeEvent</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingStyle\">BindingStyle</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/BindingClass\">BindingClass</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/IfAndShow\">IfAndShow</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ForEachLoop\">ForEachLoop</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/AddComponent\">AddComponent</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ComponentAttribute\">ComponentAttribute</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ComponentMethod\">ComponentMethod</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/StateContainer\">StateContainer</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ReadJSON\">ReadJSON</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/ReadText\">ReadText</a></li>\n\t\t<li><a routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact:true}\" routerLink=\"/InnerHTML\">InnerHTML</a></li>\n\t</ol>\n\t<div style=\"display:flex;flex-direction:column;\">\n\t\t<b><a [href]=\"ve\">Go Vue.js!</a></b>\n\t\t<b><a [href]=\"br\">Go Blazor!</a></b>\n\t\t<b><a href=\"https://qiita.com/yosgspec/items/3cf93e70a81805d70d29\">Qiita</a></b>\n\t\t<b><a href=\"https://github.com/yosgspec/VueVsBlazor\">GitHug</a></b>\n\t\t<b><a href=\"/\">Top Page</a></b>\n\t</div>\n</nav>\n\n<style>\n.active{\n\tcolor: #FF0000;\n\tfont-weight: bold;\n}\n</style>\n";
     let NavMenuComponent = class NavMenuComponent {
       get ve() {
         return location.href.replace("/ng/", "/ve/");
@@ -2094,6 +2109,52 @@
       selector: "StyleBlock",
       template: template
     })], StyleBlockComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/P20_InnerHTML.component.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/pages/P20_InnerHTML.component.ts ***!
+    \**************************************************/
+
+  /*! exports provided: InnerHTMLComponent */
+
+  /***/
+  function srcAppPagesP20_InnerHTMLComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "InnerHTMLComponent", function () {
+      return InnerHTMLComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    const template = "\n<div>\n\t<h3>Inner HTML</h3>\n\t<textarea [(ngModel)]=\"txt\" style=\"height:300px;width:300px;\"></textarea>\n\t<div [innerHTML]=\"txt\"></div>\n</div>\n";
+    let InnerHTMLComponent = class InnerHTMLComponent {
+      constructor() {
+        this.txt = "<h1>TEST TITLE</h1>\n\n<font color=\"#990000\">\n<u>Say</u> <i>Hello!</i>\n</font>";
+      }
+
+    };
+    InnerHTMLComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: "InnerHTML",
+      template: template
+    })], InnerHTMLComponent);
     /***/
   },
 

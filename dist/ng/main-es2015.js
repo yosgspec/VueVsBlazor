@@ -304,6 +304,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/P17_StateContainer.component */ "./src/app/pages/P17_StateContainer.component.ts");
 /* harmony import */ var _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/P18_ReadJSON.component */ "./src/app/pages/P18_ReadJSON.component.ts");
 /* harmony import */ var _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/P19_ReadText.component */ "./src/app/pages/P19_ReadText.component.ts");
+/* harmony import */ var _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/P20_InnerHTML.component */ "./src/app/pages/P20_InnerHTML.component.ts");
+
 
 
 
@@ -347,7 +349,8 @@ const routes = [
     { path: "ComponentMethod", component: _pages_P16_ComponentMethod_component__WEBPACK_IMPORTED_MODULE_19__["ComponentMethodComponent"] },
     { path: "StateContainer", component: _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_20__["StateContainerComponent"] },
     { path: "ReadJSON", component: _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_21__["ReadJSONComponent"] },
-    { path: "ReadText", component: _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_22__["ReadTextComponent"] }
+    { path: "ReadText", component: _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_22__["ReadTextComponent"] },
+    { path: "InnerHTML", component: _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_23__["InnerHTMLComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -444,13 +447,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/P17_StateContainer.component */ "./src/app/pages/P17_StateContainer.component.ts");
 /* harmony import */ var _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pages/P18_ReadJSON.component */ "./src/app/pages/P18_ReadJSON.component.ts");
 /* harmony import */ var _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pages/P19_ReadText.component */ "./src/app/pages/P19_ReadText.component.ts");
-/* harmony import */ var _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/NavMenu.component */ "./src/app/components/NavMenu.component.ts");
-/* harmony import */ var _components_CodeView_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/CodeView.component */ "./src/app/components/CodeView.component.ts");
-/* harmony import */ var _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/ComponentA.component */ "./src/app/components/ComponentA.component.ts");
-/* harmony import */ var _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ComponentB.component */ "./src/app/components/ComponentB.component.ts");
-/* harmony import */ var _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/ComponentC.component */ "./src/app/components/ComponentC.component.ts");
-/* harmony import */ var _components_Toast_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/Toast.component */ "./src/app/components/Toast.component.ts");
-/* harmony import */ var _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/BooksInput.component */ "./src/app/components/BooksInput.component.ts");
+/* harmony import */ var _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pages/P20_InnerHTML.component */ "./src/app/pages/P20_InnerHTML.component.ts");
+/* harmony import */ var _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/NavMenu.component */ "./src/app/components/NavMenu.component.ts");
+/* harmony import */ var _components_CodeView_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/CodeView.component */ "./src/app/components/CodeView.component.ts");
+/* harmony import */ var _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ComponentA.component */ "./src/app/components/ComponentA.component.ts");
+/* harmony import */ var _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/ComponentB.component */ "./src/app/components/ComponentB.component.ts");
+/* harmony import */ var _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/ComponentC.component */ "./src/app/components/ComponentC.component.ts");
+/* harmony import */ var _components_Toast_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/Toast.component */ "./src/app/components/Toast.component.ts");
+/* harmony import */ var _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/BooksInput.component */ "./src/app/components/BooksInput.component.ts");
+
 
 
 
@@ -511,13 +516,14 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _pages_P17_StateContainer_component__WEBPACK_IMPORTED_MODULE_24__["StateContainerComponent"],
             _pages_P18_ReadJSON_component__WEBPACK_IMPORTED_MODULE_25__["ReadJSONComponent"],
             _pages_P19_ReadText_component__WEBPACK_IMPORTED_MODULE_26__["ReadTextComponent"],
-            _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_27__["NavMenuComponent"],
-            _components_CodeView_component__WEBPACK_IMPORTED_MODULE_28__["CodeViewComponent"],
-            _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_29__["ComponentAComponent"],
-            _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_30__["ComponentBComponent"],
-            _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_31__["ComponentCComponent"],
-            _components_Toast_component__WEBPACK_IMPORTED_MODULE_32__["ToastComponent"],
-            _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_33__["BooksInputComponent"]
+            _pages_P20_InnerHTML_component__WEBPACK_IMPORTED_MODULE_27__["InnerHTMLComponent"],
+            _components_NavMenu_component__WEBPACK_IMPORTED_MODULE_28__["NavMenuComponent"],
+            _components_CodeView_component__WEBPACK_IMPORTED_MODULE_29__["CodeViewComponent"],
+            _components_ComponentA_component__WEBPACK_IMPORTED_MODULE_30__["ComponentAComponent"],
+            _components_ComponentB_component__WEBPACK_IMPORTED_MODULE_31__["ComponentBComponent"],
+            _components_ComponentC_component__WEBPACK_IMPORTED_MODULE_32__["ComponentCComponent"],
+            _components_Toast_component__WEBPACK_IMPORTED_MODULE_33__["ToastComponent"],
+            _components_BooksInput_component__WEBPACK_IMPORTED_MODULE_34__["BooksInputComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -826,6 +832,7 @@ const template = `
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/StateContainer">StateContainer</a></li>
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadJSON">ReadJSON</a></li>
 		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/ReadText">ReadText</a></li>
+		<li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/InnerHTML">InnerHTML</a></li>
 	</ol>
 	<div style="display:flex;flex-direction:column;">
 		<b><a [href]="ve">Go Vue.js!</a></b>
@@ -1404,6 +1411,47 @@ StyleBlockComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: template
     })
 ], StyleBlockComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/P20_InnerHTML.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/pages/P20_InnerHTML.component.ts ***!
+  \**************************************************/
+/*! exports provided: InnerHTMLComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InnerHTMLComponent", function() { return InnerHTMLComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+const template = `
+<div>
+	<h3>Inner HTML</h3>
+	<textarea [(ngModel)]="txt" style="height:300px;width:300px;"></textarea>
+	<div [innerHTML]="txt"></div>
+</div>
+`;
+
+let InnerHTMLComponent = class InnerHTMLComponent {
+    constructor() {
+        this.txt = `<h1>TEST TITLE</h1>
+
+<font color="#990000">
+<u>Say</u> <i>Hello!</i>
+</font>`;
+    }
+};
+InnerHTMLComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "InnerHTML",
+        template: template
+    })
+], InnerHTMLComponent);
 
 
 

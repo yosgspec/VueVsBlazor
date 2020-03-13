@@ -31,4 +31,5 @@ const exec=require("util").promisify(child_process.exec);
 	try{await rmDir("./dist");}catch{}
 
 	console.log("Angular Build Done.");
+	process.stdin.once(process.exit);
 })();

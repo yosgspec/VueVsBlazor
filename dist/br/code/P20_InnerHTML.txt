@@ -1,0 +1,16 @@
+﻿@page "/InnerHTML"
+
+<div>
+	<h3>Inner HTML</h3>
+	<textarea @bind-value="txt" @bind-value:event="oninput" style="height:300px;width:300px;"></textarea>
+	<div>@((MarkupString)txt)</div>
+</div>
+
+@code{
+	string txt=
+@"<h1>TEST TITLE</h1>
+
+<span style=color:#990099>
+<u>Say</u> <i>Hello!</i>
+</span>";
+}

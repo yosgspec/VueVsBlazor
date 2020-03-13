@@ -22,6 +22,7 @@
 		<li><router-link to="/StateContainer">StateContainer</router-link></li>
 		<li><router-link to="/ReadJSON">ReadJSON</router-link></li>
 		<li><router-link to="/ReadText">ReadText</router-link></li>
+		<li><router-link to="/InnerHTML">InnerHTML</router-link></li>
 	</ol>
 	<div style="display:flex;flex-direction:column;">
 		<b><a :href="br">Go Blazor!</a></b>

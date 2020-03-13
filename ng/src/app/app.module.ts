@@ -26,6 +26,7 @@ import {ComponentMethodComponent} from "./pages/P16_ComponentMethod.component";
 import {StateContainerComponent} from "./pages/P17_StateContainer.component";
 import {ReadJSONComponent} from "./pages/P18_ReadJSON.component";
 import {ReadTextComponent} from "./pages/P19_ReadText.component";
+import {InnerHTMLComponent} from "./pages/P20_InnerHTML.component";
 
 import {NavMenuComponent} from "./components/NavMenu.component";
 import {CodeViewComponent} from "./components/CodeView.component";
@@ -58,6 +59,7 @@ import {BooksInputComponent} from "./components/BooksInput.component";
 		StateContainerComponent,
 		ReadJSONComponent,
 		ReadTextComponent,
+		InnerHTMLComponent,
 
 		NavMenuComponent,
 		CodeViewComponent,

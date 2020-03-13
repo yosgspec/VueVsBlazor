@@ -21,4 +21,6 @@ try{Directory.Delete(@"../dist/br",true);}catch{}
 try{Directory.Move(@"./out/VueVsBlazor/dist",@"./dist");}catch{}
 try{Directory.Delete(@"./out",true);}catch{}
 try{Directory.Move(@"./dist",@"../dist/br");}catch{}
+
 WriteLine("Blazor Build Done.");
+Console.ReadLine();

@@ -20,6 +20,7 @@ import ComponentMethod from "@/views/P16_ComponentMethod.vue";
 import StateContainer from "@/views/P17_StateContainer.vue";
 import ReadJSON from "@/views/P18_ReadJSON.vue";
 import ReadText from "@/views/P19_ReadText.vue";
+import InnerHTML from "@/views/P20_InnerHTML.vue";
 
 Vue.use(VueRouter);
 
@@ -43,7 +44,8 @@ const routes=[
 	{path: "/ComponentMethod", name: "ComponentMethod", component: ComponentMethod},
 	{path: "/StateContainer", name: "StateContainer", component: StateContainer},
 	{path: "/ReadJSON", name: "ReadJSON", component: ReadJSON},
-	{path: "/ReadText", name: "ReadText", component: ReadText}
+	{path: "/ReadText", name: "ReadText", component: ReadText},
+	{path: "/InnerHTML", name: "InnerHTML", component: InnerHTML}
 ];
 
 const router=new VueRouter({

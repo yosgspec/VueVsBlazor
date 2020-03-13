@@ -21,6 +21,7 @@ import {ComponentMethodComponent} from "./pages/P16_ComponentMethod.component";
 import {StateContainerComponent} from "./pages/P17_StateContainer.component";
 import {ReadJSONComponent} from "./pages/P18_ReadJSON.component";
 import {ReadTextComponent} from "./pages/P19_ReadText.component";
+import {InnerHTMLComponent} from "./pages/P20_InnerHTML.component";
 
 const routes: Routes=[
 	{path: "", component: IndexComponent},
@@ -42,7 +43,8 @@ const routes: Routes=[
 	{path: "ComponentMethod", component: ComponentMethodComponent},
 	{path: "StateContainer", component: StateContainerComponent},
 	{path: "ReadJSON", component: ReadJSONComponent},
-	{path: "ReadText", component: ReadTextComponent}
+	{path: "ReadText", component: ReadTextComponent},
+	{path: "InnerHTML", component: InnerHTMLComponent}
 ];
 
 @NgModule({
